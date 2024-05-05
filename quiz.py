@@ -1,14 +1,15 @@
 print("***** Welcome to quiz game ****")
 
-questions = input("Do you want to play? yes / no. ANS= ")
-if questions != "yes":
+questions = input("Do you want to play? YES / NO. ANS= ")
+if questions.upper() != "YES":
     quit()
 
 score = 0
 
 print("Getting Ready ...")
+
 answer = input("What is the full Meaning of ROM? ANS = ")
-if answer == "read only memory":
+if answer.lower() == "read only memory":
     print("correct")
     score += 1
 else:
@@ -24,7 +25,7 @@ else:
     print("Right answer is Charles Babbage")
 
 answer = input("What is the brain of computer system? ANS = ")
-if answer == "cpu":
+if answer.lower() == "cpu":
     print("correct")
     score += 1
 else:
@@ -32,7 +33,7 @@ else:
     print("Right answer is CPU")
 
 answer = input("What is known as a temporary memory in computer system? ANS = ")
-if answer == "ram":
+if answer.lower() == "ram":
     print("correct")
     score += 1
 else:
@@ -40,7 +41,7 @@ else:
     print("Right answer is RAM")
 
 answer = input("What is half byte called? ANS = ")
-if answer == "nibble":
+if answer.lower() == "nibble":
     print("correct")
     score += 1
 else:
@@ -48,7 +49,7 @@ else:
     print("Right answer is NIBBLE")
 
 answer = input("What does ALU stand for in the context of computers? ANS = ")
-if answer == "arithmetic logical unit":
+if answer.lower() == "arithmetic logical unit":
     print("correct")
     score += 1
 else:
@@ -56,7 +57,7 @@ else:
     print("Right answer is Arithmetic Logical Unit")
 
 answer = input("What does SSD stand for? ANS = ")
-if answer == "solid state drive":
+if answer.lower() == "solid state drive":
     print("correct")
     score += 1
 else:
@@ -64,4 +65,4 @@ else:
     print("Right answer is Solid State Drive")
 
 print("You got " + str(score) + " questions correct")
-print("You got " + str((score/4) * 100) + " %")
+print("You got " + str((score/7) * 100) + " %")
